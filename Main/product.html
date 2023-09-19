@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../bootstrap-5.3.1-dist/css/bootstrap.min.css">
+     <style>
+        *{
+            user-select: none;
+        }
+        .products_cart:not(:first-child){
+            margin: 1rem 0rem;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <header style="z-index: 9999999;" class="bg-light text-center shadow position-fixed top-0 w-100 py-2">
+        <div class="container">
+            <h1 class="">
+                <a class="text-decoration-none text-dark mb-7 mt-2" href="./index.html">Products Shops</a>
+            </h1>
+            <form id="form__products""></form>
+            <div class="row">
+                <div class="col-4 my-3 mt-2">
+                    <input form="form__products" class="products__search form-control shadow" placeholder="Search" type="search">
+                </div>
+                <div class="col-1">
+                    <button form="form__products" class="btn btn-info text-light shadow my-2" type="submit">Submit</button>
+                </div>
+                <div class="col-1">
+                    <button class="products_back btn btn-success text-light shadow my-2">Back</button>
+                </div>
+            </div>
+        </div>
+      </header> 
+      <template>
+          <li class="border shadow rounded my-3 me-2 text-center p-2" style="width: 30%;">
+              <img class="products__img shadow " src="https://via.placeholder.com/200x200" width="265" height="250" style="border-radius:5px ; " alt="Product Photo">
+              <h4 class="fs-3 products__name  my-3">Name</h4>
+              <h5 class="products__model">Model</h5>
+              <p class=" w-60 products__color mx-auto"><strong></strong></p>
+              <div class="d-flex justify-content-center">
+                  <p class="products__price my-2 mx-4"></p>
+                  <button class="btn btn-info text-light products__buy " >Buy it</button>
+              </div>
+          </li>
+    </template>
+    <template class="cancellation_temp">
+        <div class="text-center shadow products_cart " style="width:50%; height: 50%;">
+            <h3 class="cancellation_temp__name">Name</h3>
+            <p class="cancellation_temp__price" style="font-size: 23px;">narhi</p>
+            <button class="btn btn-success text-light products_cancellation mb-4" >Cancellation</button>
+        </div>
+    </template>
+    <main  style="margin-top: 10rem;">
+        <div class="container">
+            <div class="accordion w-50 mx-auto shadow" id="accordionExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Shopping cart
+                        </button>
+                    </h2>   
+                    <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                        <div class="accordion-body cart__items ">
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <section class="hero mt-3">
+                <div class="container">
+                <ul class="products__item list-unstyled d-flex align-items-center justify-content-between flex-wrap">
+                    
+                </ul>
+            </div>
+        </section>
+      </main>                                                                                
+
+      <script src="../bootstrap-5.3.1-dist/js/bootstrap.min.js"></script>
+      <script src="../Javascript/products.js"></script>
+      <script src="../Javascript/utils.js"></script>
+      <script src="../Javascript/shops.js"></script>
+</body>
+</html>

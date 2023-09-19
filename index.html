@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="./bootstrap-5.3.1-dist/css/bootstrap.min.css">
+    <style>
+        *{
+            user-select: none;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <section class="hero">
+            <div class="container">
+                <div class="products__registratsion text-center align-items-center justify-content-center my-5 mx-auto w-50 h-50 shadow ">
+                    <form id="products__form">
+                        <label for="name">
+                            <p class="name_text">Name</p>
+                            <input class="form-control shadow" type="text" id="name" form="products__form" name="name" required>
+                        </label>
+                        <label for="lastname">
+                            <p class="lastname_text">Lastname</p>
+                            <input class="form-control my-2 shadow" type="text" id="lastname" form="products__form" name="lastname" required>
+                        </label>
+                        <label for="password">
+                            <p class="password_text">Password</p>
+                            <input class="form-control shadow" type="password" id="password" form="products__form" name="password" min="3" max="15" required>
+                        </label>
+                        <div class="products_next__page my-4">
+                            <button class="button btn btn-info mb-4 text-light shadow" form="products__form" type="submit">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="./bootstrap-5.3.1-dist/js/bootstrap.min.js"></script>
+    <script src="./Javascript/utils.js"></script>
+    <script src="./Javascript/main.js"></script>
+</body>
+</html>
